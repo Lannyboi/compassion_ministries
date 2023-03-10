@@ -1,4 +1,4 @@
-githtml, body {
+html, body {
     margin: 0px;
     padding: 0px;
 }
@@ -13,4 +13,9 @@ githtml, body {
 .logo {
     margin-top: 1rem;
     -webkit-filter: invert(100%);
+}
+
+.mission {
+    align-items: center;
+    justify-content: center;
 }
