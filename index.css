@@ -16,6 +16,52 @@ html, body {
 }
 
 .mission {
+    margin-top: .15rem;
+    margin-left: 1rem;
+    padding-bottom: 2rem;
     align-items: center;
     justify-content: center;
+}
+
+.pre-banner-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.pre-banner {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    display: flex;
+    background: url(images/image_3.png);
+    background-repeat: none;
+    background-size: cover;
+    height: 250px;
+}
+
+.event-feed{
+    display:flex;
+    flex-direction: column;
+    margin: .25rem;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-box{
+    padding-top: 1.75rem;
+    background: #9B7CAD;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 2;
+}
+
+@media only screen and (max-width: 500px) {
+    .pre-banner-wrapper {
+        display: none;
+    }
 }
