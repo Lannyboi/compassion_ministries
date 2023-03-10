@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 html, body {
-=======
-githtml, body {
->>>>>>> bd2a79d812a31617e7d66eb9ecdd5cbedecdbb51
     margin: 0px;
     padding: 0px;
 }
@@ -17,12 +13,9 @@ githtml, body {
 .logo {
     margin-top: 1rem;
     -webkit-filter: invert(100%);
-<<<<<<< HEAD
 }
 
 .mission {
     align-items: center;
     justify-content: center;
-=======
->>>>>>> bd2a79d812a31617e7d66eb9ecdd5cbedecdbb51
 }
