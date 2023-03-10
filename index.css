@@ -46,6 +46,7 @@ html, body {
     flex-direction: column;
     margin: .25rem;
     margin-bottom: 0;
+    margin-top: 2rem;
     align-items: center;
     justify-content: center;
 }
@@ -58,6 +59,33 @@ html, body {
     text-align: center;
     color: #FFFFFF;
     line-height: 2;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.face-btn {
+    background: #4267B2;
+    color: white;
+    border: solid #000000 2px;
+    margin: 2rem;
+    font-size: 30px;
+    padding: .8rem 2.3rem;
+    border-radius: 30px;
+
+}
+
+.insta-btn {
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);;
+    color: white;
+    border: solid #000000 2px;
+    font-size: 30px;
+    padding: .8rem 2.3rem;
+    border-radius: 30px;
 }
 
 @media only screen and (max-width: 500px) {
