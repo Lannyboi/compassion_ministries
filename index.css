@@ -1,4 +1,16 @@
-html, body {
+githtml, body {
     margin: 0px;
     padding: 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #8EB0B5;
+    color: #FFFFFF;
+}
+
+.logo {
+    margin-top: 1rem;
+    -webkit-filter: invert(100%);
 }
