@@ -5,15 +5,82 @@ html, body {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
     background-color: #8EB0B5;
     color: #FFFFFF;
 }
 
-.logo {
-    margin-top: 1rem;
+.title-company-name {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.hamburger-icon {
+    margin-top: 5px;
+    cursor: pointer;
     -webkit-filter: invert(100%);
 }
+
+.hamburger-sidemenu {
+    position: fixed;
+    right: -170px;
+    top: 70px;
+    height: 440px;
+    width: 170px;
+    flex-direction: column;
+    display: flex;
+    background-color: #8EB0B5;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.hamburger-sidemenu > a {
+    font-family: 'Montserrat', sans-serif;
+    height: 72px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.256);
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+}
+
+.border-remove-top{
+    border-radius: 10px 0px 0px 0px;
+}
+
+.border-remove-bottom {
+    border-radius: 0px 0px 0px 10px;
+}
+
+.hamburger-sidemenu.active {
+    animation-name: slide-in;
+  }
+
+  @keyframes slide-in {
+    0% {
+      right: -170px;
+    }
+    100% {
+      right: 0;
+    }
+  }
 
 .mission {
     margin-top: .15rem;
