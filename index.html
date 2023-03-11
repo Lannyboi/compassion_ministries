@@ -6,14 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compassion Ministries</title>
     <link rel="stylesheet" href="index.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="index.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="body">
     <header class="header">
-        <h2 class="h1">Compassion Ministries</h2>
-        <img src="images/Hamburger_icon.svg.png" height="32" width="42" class="logo" />
+        <h1 class="title-company-name">Compassion Ministries</h1>
+        <div>
+            <img src="images/Hamburger_icon.svg.png" height="35" class="hamburger-icon" id="toggle-btn" />
+            <div class="hamburger-sidemenu" id="hamburger-sidemenu-toggle">
+                <a href="" class="border-remove-top">Home</a>
+                <a href="">About Us</a>
+                <a href="">Services</a>
+                <a href="">Events</a>
+                <a href="">Information</a>
+                <a href="" class="border-remove-bottom">Contact</a>
+            </div>
+        </div>
     </header>
-    <main>
+    <main class="marble">
         <section class="pre-banner-wrapper">
             <img src="images/handshake.png" height="32" width="42" />
             <div class="pre-banner">
@@ -47,6 +65,28 @@
                 <a target="_blank" class="insta-btn" href="https://www.instagram.com/compassionministriesinc/">Instagram</a>
             </div>
         </section>
+        <section>
+            <div class="content">
+                <p>We are a non profit organization <br> established to support individuals <br> with mental health needs.</p>
+                <ul class="content1">
+                    <li class="content2">We provide educational seminars <br> and workshops.</li>
+                    <li class="content2">We coordinate partnership building <br> between mental health providers and <br> the community.</li>
+                    <li class="content2">We network with local agencies and <br> organizations providing services.</li>
+                    <li class="content2">We offer support groups.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="donations">
+                <img src="images/orangeheart.jpeg" height="178.13px" width="300px" class="donate-img" />
+                <a target="_blank" class="donate-btn" href="https://www.paypal.com/donate?token=HE-XK0BMz4OQfeBf2Z6efUcBU9krce4einPhAva7vxWp-L0oKjMYI2QtPP6C2yOm_2Hmw7oJyRta15Vz">Donate</a>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <a target="_blank" href="https://www.instagram.com/compassionministriesinc/"><img src="images/instagram-icon.png" height="40px" width="40px" /></a>
+        <p>Compassion Ministries, Inc © <br> All Rights Reserved.</p>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100064532566389&mibextid=ZbWKwL"> <img src="images/facebook-icon.png" height="40px" width="40px" /></a>
+    </footer>
 </body>
 </html>

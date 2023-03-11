@@ -5,14 +5,87 @@ html, body {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
     background-color: #8EB0B5;
     color: #FFFFFF;
 }
 
-.logo {
-    margin-top: 1rem;
+.title-company-name {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.hamburger-icon {
+    margin-top: 5px;
+    cursor: pointer;
     -webkit-filter: invert(100%);
+}
+
+.hamburger-sidemenu {
+    position: fixed;
+    right: -170px;
+    top: 70px;
+    height: 440px;
+    width: 170px;
+    flex-direction: column;
+    display: flex;
+    background-color: #8EB0B5;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.hamburger-sidemenu > a {
+    font-family: 'Montserrat', sans-serif;
+    height: 72px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.256);
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+}
+
+.border-remove-top{
+    border-radius: 10px 0px 0px 0px;
+}
+
+.border-remove-bottom {
+    border-radius: 0px 0px 0px 10px;
+}
+
+.hamburger-sidemenu.active {
+    animation-name: slide-in;
+  }
+
+  @keyframes slide-in {
+    0% {
+      right: -170px;
+    }
+    100% {
+      right: 0;
+    }
+  }
+
+.marble {
+    background: url(images/marble-background.jpg);
+    background-repeat: none;
+    background-size: cover;
 }
 
 .mission {
@@ -21,6 +94,8 @@ html, body {
     padding-bottom: 2rem;
     align-items: center;
     justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 .pre-banner-wrapper {
@@ -49,16 +124,19 @@ html, body {
     margin-top: 2rem;
     align-items: center;
     justify-content: center;
-}
+}  
 
 .event-box{
     padding-top: 1.75rem;
     background: #9B7CAD;
-    width: 250px;
+    width: 300px;
     height: 250px;
     text-align: center;
     color: #FFFFFF;
     line-height: 2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
 }
 
 .social-buttons {
@@ -74,8 +152,10 @@ html, body {
     border: solid #000000 2px;
     margin: 2rem;
     font-size: 30px;
-    padding: .8rem 2.3rem;
+    padding: .8rem 3.0rem;
     border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 
 }
 
@@ -84,9 +164,68 @@ html, body {
     color: white;
     border: solid #000000 2px;
     font-size: 30px;
-    padding: .8rem 2.3rem;
+    padding: .8rem 2.5rem;
     border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+.content1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.content2{
+    margin-bottom: .5rem;
+}
+
+.donations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate-img{
+    border-radius: 10px;
+}
+
+.donate-btn {
+    background: #FFC82F;
+    color: white;
+    border: solid #000000 2px;
+    margin: 2rem;
+    font-size: 30px;
+    padding: .8rem 3.6rem;
+    border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 6rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background: #8EB0B5;
+    font-size: 10px;
+    align-items: center; 
+    justify-content: center;
+    padding: 1em;
+    gap: 3rem;
+}
+
+
 
 @media only screen and (max-width: 500px) {
     .pre-banner-wrapper {
