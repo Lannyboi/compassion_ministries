@@ -248,10 +248,10 @@ footer > p {
 }
 
 .board-title {
+    text-align: center;
     font-size: 24px;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    padding-left: 1.1em;
 }
 
 .board {
@@ -264,6 +264,7 @@ footer > p {
 .bio-pic {
     width: 320px;
     height: 425px;
+    border-radius: 10px;
     align-items: center; 
     justify-content: center;
 }
@@ -294,11 +295,7 @@ footer > p {
 }
 
 .bio-text{ 
-<<<<<<< HEAD
     width: 290px;
-=======
-    width: 320px;
->>>>>>> 131eecc25a5a7ca9b17d6453416c994b129b6a55
     align-items: center; 
     justify-content: center;
     margin-bottom: .5rem;
