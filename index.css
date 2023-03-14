@@ -90,14 +90,25 @@ html, body {
 }
 
 .mission {
-    margin-top: .15rem;
-    margin-left: 1rem;
-    padding-bottom: 2rem;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Lato', sans-serif;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
     font-weight: 400;
     line-height: 1.1;
+    font-size: 16px;
+}
+
+.mission-text-container {
+    padding: 0px 10px;
+    border-radius: 10px;
+    margin: 0px auto;
+    max-width: 1040px;
+    min-width: 290px;
+    background-color: rgba(255, 255, 255, 0.500);
+}
+
+.mission-toptext {
+    margin-bottom: 12px;
 }
 
 .pre-banner-wrapper {
@@ -111,8 +122,11 @@ html, body {
 }
 
 .banner {
+    padding: 0px 10px;
     display: flex;
     background: url(images/image_3.png);
+    justify-content: center;
+    align-items: center;
     background-repeat: none;
     background-size: cover;
     height: 250px;
@@ -226,10 +240,12 @@ html, body {
     font-size: 10px;
     align-items: center; 
     justify-content: center;
-    padding: 1em;
     gap: 3rem;
 }
 
+footer > p {
+    text-align: center;
+}
 
 .board-title {
     font-size: 24px;
@@ -240,23 +256,19 @@ html, body {
 .board {
     display: flex; 
     flex-direction: column;
-    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .bio-pic {
-    width: 345px;
+    width: 320px;
     height: 425px;
     align-items: center; 
     justify-content: center;
 }
 
 .bio{ 
-    width: 345px;
-    padding-right: .25rem;
-    align-items: center; 
-    justify-content: center;
-    padding-bottom: 0;
-    padding-top: 0;
+    width: 300px;
     margin-bottom: .5rem;
 }
 
@@ -280,9 +292,8 @@ html, body {
     display: inline;
 }
 
-.bio1{ 
-    width: 345px;
-    padding-right: .25rem;
+.bio-text{ 
+    width: 320px;
     align-items: center; 
     justify-content: center;
     padding-bottom: 0;
@@ -310,16 +321,6 @@ html, body {
     display: inline;
 }
 
-.bio2{ 
-    width: 345px;
-    padding-right: .25rem;
-    align-items: center; 
-    justify-content: center;
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-bottom: .5rem;
-}
-
 .bio2-cont{
     display: none;
 }
@@ -338,16 +339,6 @@ html, body {
 
 .bio2.show-more2 .bio2-cont {
     display: inline;
-}
-
-.bio3{ 
-    width: 345px;
-    padding-right: .25rem;
-    align-items: center; 
-    justify-content: center;
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-bottom: .5rem;
 }
 
 .bio3-cont{
@@ -370,15 +361,6 @@ html, body {
     display: inline;
 }
 
-.bio4{ 
-    width: 345px;
-    padding-right: .25rem;
-    align-items: center; 
-    justify-content: center;
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-bottom: .5rem;
-}
 
 .bio4-cont{
     display: none;
@@ -398,16 +380,6 @@ html, body {
 
 .bio4.show-more4 .bio4-cont {
     display: inline;
-}
-
-.bio5{ 
-    width: 345px;
-    padding-right: .25rem;
-    align-items: center; 
-    justify-content: center;
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-bottom: .5rem;
 }
 
 .bio5-cont{
@@ -432,7 +404,7 @@ html, body {
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .pre-banner-wrapper {
         display: none;
     }
