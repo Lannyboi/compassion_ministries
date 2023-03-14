@@ -243,6 +243,13 @@ html, body {
     margin-left: 1rem;
 }
 
+.bio-pic {
+    width: 345px;
+    height: 425px;
+    align-items: center; 
+    justify-content: center;
+}
+
 .bio{ 
     width: 345px;
     padding-right: .25rem;
@@ -250,6 +257,7 @@ html, body {
     justify-content: center;
     padding-bottom: 0;
     padding-top: 0;
+    margin-bottom: .5rem;
 }
 
 .bio-cont{
@@ -265,18 +273,163 @@ html, body {
     color: #000000;
     border: none;
     cursor: pointer;
+    margin-bottom: 1.5rem;
 }
 
 .bio.show-more .bio-cont {
     display: inline;
 }
 
-.bio-pic {
+.bio1{ 
     width: 345px;
-    height: 425px;
+    padding-right: .25rem;
     align-items: center; 
     justify-content: center;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: .5rem;
 }
+
+.bio1-cont{
+    display: none;
+}
+
+.read-more-btn1 {
+    padding: 5px 15px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 24px;
+    background: lightgreen;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.bio1.show-more1 .bio1-cont {
+    display: inline;
+}
+
+.bio2{ 
+    width: 345px;
+    padding-right: .25rem;
+    align-items: center; 
+    justify-content: center;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: .5rem;
+}
+
+.bio2-cont{
+    display: none;
+}
+
+.read-more-btn2 {
+    padding: 5px 15px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 24px;
+    background: lightgreen;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.bio2.show-more2 .bio2-cont {
+    display: inline;
+}
+
+.bio3{ 
+    width: 345px;
+    padding-right: .25rem;
+    align-items: center; 
+    justify-content: center;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: .5rem;
+}
+
+.bio3-cont{
+    display: none;
+}
+
+.read-more-btn3 {
+    padding: 5px 15px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 24px;
+    background: lightgreen;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.bio3.show-more3 .bio3-cont {
+    display: inline;
+}
+
+.bio4{ 
+    width: 345px;
+    padding-right: .25rem;
+    align-items: center; 
+    justify-content: center;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: .5rem;
+}
+
+.bio4-cont{
+    display: none;
+}
+
+.read-more-btn4 {
+    padding: 5px 15px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 24px;
+    background: lightgreen;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.bio4.show-more4 .bio4-cont {
+    display: inline;
+}
+
+.bio5{ 
+    width: 345px;
+    padding-right: .25rem;
+    align-items: center; 
+    justify-content: center;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: .5rem;
+}
+
+.bio5-cont{
+    display: none;
+}
+
+.read-more-btn5 {
+    padding: 5px 15px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 24px;
+    background: lightgreen;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.bio5.show-more5 .bio5-cont {
+    display: inline;
+}
+
 
 
 @media only screen and (max-width: 500px) {
