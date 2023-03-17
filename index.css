@@ -3,7 +3,9 @@ html, body {
     padding: 0px;
 }
 
-.header {
+/* Start header CSS */
+
+header {
     display: flex;
     height: 70px;
     justify-content: space-between;
@@ -62,7 +64,7 @@ html, body {
     border: 1px solid white;
 }
 
-.border-remove-top{
+.border-remove-top {
     border-radius: 10px 0px 0px 0px;
 }
 
@@ -72,30 +74,36 @@ html, body {
 
 .hamburger-sidemenu.active {
     animation-name: slide-in;
-  }
+}
 
-  @keyframes slide-in {
+/* Hamburger side menu animation */
+
+@keyframes slide-in {
     0% {
       right: -170px;
     }
     100% {
       right: 0;
     }
-  }
+}
 
-.marble {
+/* End Header CSS */
+
+/* Start main CSS */
+
+.marble-background {
     background: url(images/marble-background.jpg);
-    background-repeat: none;
     background-size: cover;
 }
 
-.mission {
-    border-radius: 10px;
-    text-align: center;
-    font-family: 'Open sans', sans-serif;
-    font-weight: 400;
-    line-height: 1.1;
-    font-size: 16px;
+.header-intro-container {
+    display: none;
+    width: 100%;
+}
+
+.header-intro {
+    display: flex;
+    flex-direction: column;
 }
 
 .mission-text-container {
@@ -111,14 +119,13 @@ html, body {
     margin-bottom: 12px;
 }
 
-.pre-banner-wrapper {
-    display: flex;
-    width: 100%;
-}
-
-.pre-banner {
-    display: flex;
-    flex-direction: column;
+.mission-text {
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+    font-size: 16px;
 }
 
 .banner {
@@ -155,11 +162,12 @@ html, body {
     border-radius: 10px;
 }
 
-.social-buttons {
+.social-buttons-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .face-btn {
@@ -173,7 +181,6 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     cursor: pointer;
-
 }
 
 .insta-btn {
@@ -188,7 +195,7 @@ html, body {
     cursor: pointer;
 }
 
-.content {
+.what-we-offer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,14 +204,20 @@ html, body {
     font-weight: 700;
     font-size: 1em;
 }
-.content1{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1em;
+
+.what-we-offer-container > h2 {
+    font-size: 22px;
+    text-align: center;
+    padding: 0px 10px;
 }
 
-.content2{
-    margin-bottom: .5rem;
+.what-we-offer-list{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.what-we-offer-list > li {
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
 .donations{
@@ -215,6 +228,7 @@ html, body {
 }
 
 .donate-img{
+    width: 300px;
     border-radius: 10px;
 }
 
@@ -248,10 +262,10 @@ footer > p {
 }
 
 .board-title {
+    text-align: center;
     font-size: 24px;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    padding-left: 1.1em;
 }
 
 .board {
@@ -264,6 +278,7 @@ footer > p {
 .bio-pic {
     width: 320px;
     height: 425px;
+    border-radius: 10px;
     align-items: center; 
     justify-content: center;
 }
@@ -294,11 +309,7 @@ footer > p {
 }
 
 .bio-text{ 
-<<<<<<< HEAD
     width: 290px;
-=======
-    width: 320px;
->>>>>>> 131eecc25a5a7ca9b17d6453416c994b129b6a55
     align-items: center; 
     justify-content: center;
     margin-bottom: .5rem;
@@ -405,10 +416,43 @@ footer > p {
     display: inline;
 }
 
+.offered-services {
+    display:flex;
+    flex-direction: column;
+    margin: 1rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    background: #A9DBE2;
+    border-radius: 10px;
+}
 
+.service {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    padding: .5em .5em;
+}
 
-@media only screen and (max-width: 700px) {
-    .pre-banner-wrapper {
+.sem-pics {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.sem-pic {
+    margin: 0 auto;
+    height: 100%;
+    width: 300px;
+}
+
+@media only screen and (min-width: 700px) {
+    .header-intro-container {
         display: none;
     }
-}
+} 
