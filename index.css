@@ -97,13 +97,48 @@ header {
 }
 
 .header-intro-container {
-    display: none;
-    width: 100%;
+    display: flex;
+    background-color: #A9DBE2;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
-.header-intro {
+.header-intro-text-container {
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+.header-intro-text-container > h1 {
+    margin: 0px;
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 0.18em;
+    color: #333333;
+}
+
+.header-intro-text-container > p {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.header-call-text-container {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+
+.header-call-text-container > p {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.1em;
 }
 
 .mission-text-container {
@@ -131,12 +166,18 @@ header {
 .banner {
     padding: 0px 10px;
     display: flex;
-    background: url(images/image_3.png);
+    background: url(images/butterfly-background.jpg);
     justify-content: center;
-    align-items: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 250px;
+    background-position: bottom left;
+
+    /* background-position: bottom 100px left;
+       FOR LARGER SCREENS
+    */
+
+    align-items: center;
+    height: 350px;
 }
 
 .event-feed{
@@ -160,21 +201,23 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     border-radius: 10px;
+    margin-bottom: 40px;
 }
 
 .social-buttons-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+    gap: 40px;
+    padding: 0px 10px;
 }
 
 .face-btn {
     background: #4267B2;
     color: white;
     border: solid #000000 2px;
-    margin: 2rem;
     font-size: 30px;
     padding: .8rem 3.0rem;
     border-radius: 30px;
@@ -207,12 +250,14 @@ header {
 
 .what-we-offer-container > h2 {
     font-size: 22px;
+    max-width: 700px;
     text-align: center;
     padding: 0px 10px;
 }
 
 .what-we-offer-list{
     font-family: 'Open Sans', sans-serif;
+    max-width: 600px;
 }
 
 .what-we-offer-list > li {
@@ -246,20 +291,32 @@ header {
     cursor: pointer;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-around;
-    color: white;
-    background: #8EB0B5;
-    font-size: 10px;
-    align-items: center; 
-    justify-content: center;
-    gap: 3rem;
+footer {
+    background-color: #8EB0B5;
 }
 
-footer > p {
-    text-align: center;
+.footer {
+    margin: 0px auto;
+    max-width: 800px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px
 }
+
+.footer > p {
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
+
+/*           */
+/*           */
+/* About CSS */
+/*           */
+/*           */
 
 .board-title {
     text-align: center;
@@ -451,7 +508,13 @@ footer > p {
     width: 300px;
 }
 
-@media only screen and (min-width: 700px) {
+/* Notes
+    header should be a bit smaller at 700 snap.
+    scale should be around 950px.
+    (or just have snap at 950)
+*/
+
+@media only screen and (max-width: 700px) {
     .header-intro-container {
         display: none;
     }
