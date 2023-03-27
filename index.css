@@ -508,6 +508,7 @@ footer {
     width: 300px;
 }
 
+<<<<<<< HEAD
 .events {
     display: flex;
     margin: 0 auto;
@@ -518,6 +519,8 @@ footer {
     
 }
 
+=======
+>>>>>>> 7e6a5579646c21aacb507d32a71797c71e9fbe92
 /* Notes
     header should be a bit smaller at 700 snap.
     scale should be around 950px.
