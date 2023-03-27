@@ -508,7 +508,6 @@ footer {
     width: 300px;
 }
 
-<<<<<<< HEAD
 .events {
     display: flex;
     margin: 0 auto;
@@ -519,8 +518,6 @@ footer {
     
 }
 
-=======
->>>>>>> 7e6a5579646c21aacb507d32a71797c71e9fbe92
 /* Notes
     header should be a bit smaller at 700 snap.
     scale should be around 950px.
@@ -528,7 +525,48 @@ footer {
 */
 
 @media only screen and (max-width: 700px) {
-    .header-intro-container {
+    .header-intro-container{
         display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+} 
+
+@media only screen and (min-width: 700px) {
+    .hamburger{
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 127px; 
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 4rem;
+        color: #FFFFFF;
+    }
+
+    .title-company-name {
+        margin-right: 3rem;
+        font-size: 1.5rem;
+        width: 400px; 
+    }
+
+
+    .select {
+        font-size: 1.3em;
+        font-weight: 700;
+        text-decoration: none;
+        /* box-shadow: 0px 24px 3px -24px black; */
+        cursor: pointer;
+        margin-top: 3.4rem; 
+        margin-right: 10px;
+        color: #FFFFFF;
+    }
+
+    .select:hover, .select:focus {
+        color: purple;
     }
 } 
