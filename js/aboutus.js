@@ -27,7 +27,7 @@ readMoreBtn1.addEventListener('click',(e)=>{
     } else {
         readMoreBtn1.innerText = 'Read More'
     }
-})
+}) 
 
 readMoreBtn2.addEventListener('click',(e)=>{
     bioText2.classList.toggle('show-more2')
