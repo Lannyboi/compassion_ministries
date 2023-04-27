@@ -108,3 +108,23 @@
     margin-bottom: 6rem;
     cursor: pointer;
 }
+
+@media (min-width: 768px) {
+    .what-we-offer-container {
+        font-size: 1.2rem;
+    }
+
+    .donate-img {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .what-we-offer-container {
+        font-size: 1.5rem;
+    }
+
+    .donate-img {
+        width: 500px;
+    }
+}
