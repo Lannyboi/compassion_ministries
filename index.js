@@ -3,5 +3,4 @@ const toggleBtn = document.getElementById('toggle-btn');
 
 toggleBtn.addEventListener('click', () => {
     hamburgerSideMenu.classList.toggle('active');
-    console.log(hamburgerSideMenu)
 });
