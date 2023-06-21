@@ -1,0 +1,130 @@
+.event-feed{
+    display:flex;
+    flex-direction: column;
+    margin: .25rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}  
+
+.event-box{
+    padding-top: 1.75rem;
+    background: #9B7CAD;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.social-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 40px;
+    padding: 0px 10px;
+}
+
+.face-btn {
+    background: #4267B2;
+    color: white;
+    border: solid #000000 2px;
+    font-size: 30px;
+    padding: .8rem 3.0rem;
+    border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.insta-btn {
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);;
+    color: white;
+    border: solid #000000 2px;
+    font-size: 30px;
+    padding: .8rem 2.5rem;
+    border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.what-we-offer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.what-we-offer-container > h2 {
+    font-size: 22px;
+    max-width: 700px;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.what-we-offer-list{
+    font-family: 'Open Sans', sans-serif;
+    max-width: 600px;
+}
+
+.what-we-offer-list > li {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.donations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate-img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.donate-btn {
+    background: #FFC82F;
+    color: white;
+    border: solid #000000 2px;
+    margin: 2rem;
+    font-size: 30px;
+    padding: .8rem 3.6rem;
+    border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 6rem;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .what-we-offer-container {
+        font-size: 1.2rem;
+    }
+
+    .donate-img {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .what-we-offer-container {
+        font-size: 1.5rem;
+    }
+
+    .donate-img {
+        width: 500px;
+    }
+}

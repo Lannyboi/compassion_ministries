@@ -1,16 +1,279 @@
-githtml, body {
+html, body {
     margin: 0px;
     padding: 0px;
 }
 
-.header {
+html {
+    max-width: 1800px;
+    margin: 0px auto;
+    box-shadow: 0px 0px 4px 0px;
+}
+
+/* Start header CSS */
+
+.navbar {
+    height: 70px;
+    background-color: #8EB0B5;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.navbar > a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.256);
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.hamburger-navbar {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
     background-color: #8EB0B5;
     color: #FFFFFF;
 }
 
-.logo {
-    margin-top: 1rem;
+.hamburger-navbar > h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.hamburger-icon {
+    margin-top: 5px;
+    cursor: pointer;
     -webkit-filter: invert(100%);
+    filter: invert(100);
+}
+
+.hamburger-sidemenu {
+    position: fixed;
+    right: -170px;
+    top: 70px;
+    height: 440px;
+    width: 170px;
+    flex-direction: column;
+    display: flex;
+    background-color: #8EB0B5;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.hamburger-sidemenu > a {
+    font-family: 'Montserrat', sans-serif;
+    height: 72px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.256);
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+}
+
+.active-page-color {
+    color: #404040;
+}
+
+.border-remove-top {
+    border-radius: 10px 0px 0px 0px;
+}
+
+.border-remove-bottom {
+    border-radius: 0px 0px 0px 10px;
+}
+
+.hamburger-sidemenu.active {
+    animation-name: slide-in;
+}
+
+/* Hamburger side menu animation */
+
+@keyframes slide-in {
+    0% {
+      right: -170px;
+    }
+    100% {
+      right: 0;
+    }
+}
+
+/* End Header CSS */
+
+/* Start main CSS */
+
+.marble-background {
+    background: url(images/marble-background.jpg);
+    background-size: cover;
+}
+
+.header-intro-container {
+    display: flex;
+    background-color: #A9DBE2;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-intro-text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-intro-text-container > h1 {
+    margin: 0px;
+    margin-top: 10px;
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: #333333;
+    font-size: 24px;
+}
+
+.header-intro-text-container > p {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.header-call-text-container {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+
+.header-call-text-container > p {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+
+.mission-text-container {
+    padding: 0px 10px;
+    border-radius: 10px;
+    margin: 0px auto;
+    max-width: 1040px;
+    min-width: 290px;
+    background-color: rgba(255, 255, 255, 0.500);
+}
+
+.mission-toptext {
+    margin-bottom: 12px;
+}
+
+.mission-text {
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+    font-size: 16px;
+}
+
+.banner {
+    padding: 0px 10px;
+    display: flex;
+    background: url(images/butterfly-background-4000px.jpg);
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+
+    /* background-position: bottom 100px left;
+       FOR LARGER SCREENS
+    */
+
+    align-items: center;
+    height: 350px;
+}
+
+footer {
+    background-color: #8EB0B5;
+}
+
+.footer {
+    margin: 0px auto;
+    max-width: 800px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px
+}
+
+.footer > p {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
+
+/* Notes
+    header should be a bit smaller at 700 snap.
+    scale should be around 950px.
+    (or just have snap at 950)
+*/
+
+@media (max-width: 768px) {
+    .header-intro-container{
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger-navbar {
+        display: none;
+    }
+
+    .footer > p {
+        font-size: 20px;
+    }
+
+    .mission-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mission-text {
+        font-size: 1.5rem;
+    }
+
+    .banner {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .banner {
+        height: 500px;
+    }
 }
